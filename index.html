@@ -122,8 +122,7 @@ nav{
   width:100%;height:100%;
   object-fit:cover;
   object-position:center top;
-  filter:url(#sharpen) contrast(1.08) saturate(1.12) brightness(1.02);
-  image-rendering:high-quality;
+  filter:url(#sharpen) contrast(1.1) saturate(1.08) brightness(1.02);
   display:block;
 }
 .hero-photo::after{
@@ -763,13 +762,13 @@ footer{
 
 <!-- SOCIAL BAR -->
 <div class="social-bar r">
-  <a href="https://instagram.com/maximariani_" target="_blank" rel="noopener" class="social-item">
+  <a href="https://instagram.com/maximomariani6" target="_blank" rel="noopener" class="social-item">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
       <circle cx="12" cy="12" r="4"/>
       <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
     </svg>
-    @maximariani_
+    @maximomariani6
   </a>
   <div class="social-divider"></div>
   <a href="https://youtube.com/@maximomariani6" target="_blank" rel="noopener" class="social-item">
@@ -906,7 +905,7 @@ footer{
   <ul class="footer-links">
     <li><a href="#taller">El Taller</a></li>
     <li><a href="#asesoria">Asesoría</a></li>
-    <li><a href="https://instagram.com/maximariani_" target="_blank" rel="noopener">Instagram</a></li>
+    <li><a href="https://instagram.com/maximomariani6" target="_blank" rel="noopener">Instagram</a></li>
     <li><a href="https://youtube.com/@maximomariani6" target="_blank" rel="noopener">YouTube</a></li>
     <li><a href="https://tiktok.com/@maximariani_" target="_blank" rel="noopener">TikTok</a></li>
   </ul>
@@ -958,6 +957,20 @@ document.querySelectorAll('.r,.r-left,.r-right,.step').forEach(function(el){
   <defs>
     <filter id="sharpen">
       <feConvolveMatrix order="3" kernelMatrix="0 -0.3 0  -0.3 2.2 -0.3  0 -0.3 0" />
+    </filter>
+  </defs>
+</svg>
+
+<!-- SVG sharpen filter -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="sharpen" x="0" y="0" width="100%" height="100%" color-interpolation-filters="linearRGB">
+      <feConvolveMatrix
+        order="3"
+        kernelMatrix="0 -0.5 0  -0.5 3 -0.5  0 -0.5 0"
+        divisor="1"
+        bias="0"
+        preserveAlpha="true"/>
     </filter>
   </defs>
 </svg>
