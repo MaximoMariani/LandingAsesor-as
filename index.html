@@ -357,6 +357,61 @@ nav{
   margin-top:.5rem;
 }
 
+/* Pricing card */
+.precio-card{
+  background:var(--bg);
+  border:1px solid var(--border-light);
+  border-radius:20px;
+  padding:28px 32px;
+  text-align:right;
+  box-shadow:var(--shadow-sm);
+}
+.precio-label{
+  font-size:.72rem;
+  font-weight:500;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--text-quaternary);
+  margin-bottom:.6rem;
+}
+.precio-amount{
+  font-family:'Outfit',sans-serif;
+  font-size:2.4rem;
+  font-weight:700;
+  letter-spacing:-.03em;
+  color:var(--text-primary);
+  line-height:1;
+}
+.precio-period{
+  font-size:.82rem;
+  font-weight:400;
+  color:var(--text-tertiary);
+  margin-top:.3rem;
+  margin-bottom:1.5rem;
+}
+.btn-mp{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5rem;
+  width:100%;
+  padding:.85rem 1.5rem;
+  background:#009ee3;
+  color:#fff;
+  font-size:.88rem;
+  font-weight:600;
+  border-radius:980px;
+  text-decoration:none;
+  transition:background .2s, transform .15s;
+}
+.btn-mp:hover{background:#0082c8;transform:scale(1.02);}
+.precio-nota{
+  font-size:.72rem;
+  color:var(--text-quaternary);
+  margin-top:.75rem;
+  line-height:1.5;
+}
+
 /* STATS GRID — 3 columnas grandes */
 .taller-stats{
   display:grid;
@@ -1057,8 +1112,21 @@ footer{
       </div>
     </div>
     <div class="taller-header-right r d2">
-      <a href="#contacto" class="btn-primary" style="display:inline-flex;">Quiero entrar →</a>
-      <p class="taller-cta-note">Solo 1 cupo disponible</p>
+      <div class="precio-card">
+        <p class="precio-label">Suscripción mensual</p>
+        <div class="precio-amount">$75.000</div>
+        <p class="precio-period">por mes · cancelás cuando querés</p>
+        <a
+          href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=fda2eb2f707d4d33b0822ba724861870"
+          target="_blank"
+          rel="noopener"
+          class="btn-mp"
+        >
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;opacity:.9"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          Suscribirme con MercadoPago
+        </a>
+        <p class="precio-nota">Solo queda <strong>1 cupo disponible</strong>.<br>El acceso se confirma tras el pago.</p>
+      </div>
     </div>
   </div>
 
